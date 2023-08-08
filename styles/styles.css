@@ -75,9 +75,8 @@ picture {
 }
 
 body {
-  background-image: url("../images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-color: var(--clr-primary-pale-blue);
   min-height: 100vh;
   display: flex;
@@ -143,4 +142,16 @@ a {
 }
 .order-summary {
   padding: 2rem;
+}
+
+@media (min-width: 23.4375em) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+}
+
+@media (min-width: 90em) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
 }
